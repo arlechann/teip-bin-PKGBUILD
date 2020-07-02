@@ -1,13 +1,13 @@
 # Maintainer: Your Name <youremail@domain.com>
 pkgname=teip-bin
-pkgver=1.2.0
+pkgver=1.2.1
 pkgrel=1
 pkgdesc="Select partial standard input and replace with the result of another command efficiently"
 arch=('x86_64')
 url="https://github.com/greymd/teip"
 license=('MIT')
 source=("https://github.com/greymd/teip/releases/download/v$pkgver/teip-$pkgver.$CARCH-unknown-linux-musl.tar.gz")
-md5sums=('0c5ce01b7691e07bb23bec053cd25b1c')
+md5sums=('da4924a5fb130e450c924f300b3a371c')
 
 package() {
 	install -m 755 -D "$srcdir/bin/teip" "$pkgdir/usr/bin/teip"
